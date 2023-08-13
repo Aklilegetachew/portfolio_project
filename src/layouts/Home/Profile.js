@@ -24,7 +24,7 @@ const ProfileText = ({ visible, titleId }) => (
       I am Aklile Getachew, a passionate and driven software engineering graduate with a
       natural talent and a strong desire to excel in my field. Right now, I am making
       waves as a dedicated developer, determined to carve my path in the industry. My
-      ambition is to become a prominent figure in the world of development, and I've
+      ambition is to become a prominent figure in the world of development, and I have
       diligently built a powerful personal brand that revolves around excellence and
       unwavering determination.
     </Text>
@@ -32,7 +32,7 @@ const ProfileText = ({ visible, titleId }) => (
       Throughout my journey, I have achieved remarkable milestones that showcase both my
       skill set and my unyielding dedication to the field. I have proven myself by
       consistently enhancing user experiences, streamlining workflows, and creating
-      cutting-edge software solutions that push the boundaries of what's possible.
+      cutting-edge software solutions that push the boundaries of whats possible.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       Beyond my personal achievements, I am committed to fostering innovation within the
