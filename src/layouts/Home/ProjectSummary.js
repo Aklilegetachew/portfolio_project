@@ -25,6 +25,8 @@ export const ProjectSummary = ({
   model,
   buttonText,
   buttonLink,
+  buttonText2,
+  buttonLink2,
   alternate,
   ...rest
 }) => {
@@ -84,6 +86,13 @@ export const ProjectSummary = ({
           {buttonText}
         </Button>
       </div>
+      {buttonText2 !== '' && (
+        <div className={styles.button} data-visible={visible}>
+          <Button iconHoverShift href={buttonLink2} iconEnd="arrowRight">
+            {buttonText2}
+          </Button>
+        </div>
+      )}
     </div>
   );
 
@@ -91,7 +100,7 @@ export const ProjectSummary = ({
     <div className={styles.preview}>
       {model.type === 'laptop' && (
         <>
-          {renderKatakana('laptop', visible)}
+          {/* {renderKatakana('laptop', visible)} */}
           <div className={styles.model} data-device="laptop">
             <Model
               alt={model.alt}
@@ -113,7 +122,7 @@ export const ProjectSummary = ({
       )}
       {model.type === 'phone' && (
         <>
-          {renderKatakana('phone', visible)}
+          {/* {renderKatakana('phone', visible)} */}
           <div className={styles.model} data-device="phone">
             <Model
               alt={model.alt}

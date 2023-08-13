@@ -21,17 +21,28 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I am Aklile Getachew, a passionate and driven software engineering graduate with a
+      natural talent and a strong desire to excel in my field. Right now, I am making
+      waves as a dedicated developer, determined to carve my path in the industry. My
+      ambition is to become a prominent figure in the world of development, and I've
+      diligently built a powerful personal brand that revolves around excellence and
+      unwavering determination.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      Throughout my journey, I have achieved remarkable milestones that showcase both my
+      skill set and my unyielding dedication to the field. I have proven myself by
+      consistently enhancing user experiences, streamlining workflows, and creating
+      cutting-edge software solutions that push the boundaries of what's possible.
     </Text>
+    <Text className={styles.description} data-visible={visible} size="l" as="p">
+      Beyond my personal achievements, I am committed to fostering innovation within the
+      tech community. I actively engage in various tech communities, encouraging my peers
+      to think outside the box and challenge conventional norms. My aim is to inspire
+      others to unlock their full potential and embrace their journey of growth.
+    </Text>
+    {/* <Text className={styles.description} data-visible={visible} size="l" as="p">
+      In my spare time I like to play Chess, play video games, and watching movies 
+    </Text> */}
   </Fragment>
 );
 
@@ -59,7 +70,8 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/contact"
+                // href="/contact"
+                href="#"
                 icon="send"
               >
                 Send me a message
@@ -84,7 +96,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   placeholder={profileImgPlaceholder}
                   srcSet={[profileImg, profileImgLarge]}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
+                  alt="Me standing in Alx Office"
                 />
                 <svg
                   aria-hidden="true"
@@ -94,7 +106,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   className={styles.svg}
                   data-visible={visible}
                 >
-                  <use href={`${profileKatakana}#katakana-profile`} />
+                  
                 </svg>
               </div>
             </div>

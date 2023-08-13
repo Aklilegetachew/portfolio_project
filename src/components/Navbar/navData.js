@@ -1,36 +1,36 @@
 export const navLinks = [
   {
-    label: 'Projects',
-    pathname: '/#project-1',
-  },
-  {
-    label: 'Details',
+    label: 'Bio',
     pathname: '/#details',
   },
   {
-    label: 'Articles',
-    pathname: '/articles',
+    label: 'Portfolio',
+    pathname: '/#project-1',
   },
   {
-    label: 'Contact',
-    pathname: '/contact',
+    label: 'Elevator pitch',
+    pathname: '/articles',
   },
+  // {
+  //   label: 'Contact',
+  //   pathname: '/contact',
+  // },
 ];
 
 export const socialLinks = [
+  // {
+  //   label: 'Twitter',
+  //   url: 'https://twitter.com/hamishMW',
+  //   icon: 'twitter',
+  // },
   {
-    label: 'Twitter',
-    url: 'https://twitter.com/hamishMW',
-    icon: 'twitter',
-  },
-  {
-    label: 'Figma',
-    url: 'https://www.figma.com/@Hamish',
-    icon: 'figma',
+    label: 'Linkedin',
+    url: 'https://www.linkedin.com/in/aklilegetachew',
+    icon: 'linkedin',
   },
   {
     label: 'Github',
-    url: 'https://github.com/HamishMW',
+    url: 'https://github.com/Aklilegetachew',
     icon: 'github',
   },
 ];

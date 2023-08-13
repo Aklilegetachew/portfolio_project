@@ -174,11 +174,25 @@ export const Articles = ({ posts, featured }) => {
   return (
     <article className={styles.articles}>
       <Meta
-        title="Articles"
-        description="A collection of technical design and development articles. May contain incoherent ramblings."
+        title="Pitch Video "
+        description="Pitch video comming soon"
       />
       <Section className={styles.content}>
-        {!isSingleColumn && (
+      <div className={styles}>
+        Pitch Video Comming Soon
+      </div>
+      <div className={styles.grid}>
+      <Text
+            className={styles.skeletonBone}
+            size="l"
+            as="p"
+            style={{ height: 90, width: '100%' }}
+          />
+        Loading...
+     
+      </div>
+        
+        {/* {!isSingleColumn && (
           <div className={styles.grid}>
             {postList}
             {featuredPost}
@@ -190,7 +204,7 @@ export const Articles = ({ posts, featured }) => {
             {featuredPost}
             {postList}
           </div>
-        )}
+        )} */}
       </Section>
       <Footer />
     </article>

@@ -4,6 +4,8 @@ import gamestackTexture2 from 'assets/gamestack-list.jpg';
 import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import gamestackTexture from 'assets/gamestack-login.jpg';
+import TomocaBotB from 'assets/tomocaBotB.jpg';
+import TomocaBotF from 'assets/TomocaBotF.jpg';
 import sliceTextureLarge from 'assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import sliceTexture from 'assets/slice-app.jpg';
@@ -77,36 +79,24 @@ export const Home = () => {
         disciplines={disciplines}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
+      <Profile
+        sectionRef={details}
+        visible={visibleSections.includes(details.current)}
+        id="details"
+      />
+
       <ProjectSummary
         id="project-1"
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
-        index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
-        model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: [sprTexture, sprTextureLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-2"
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="Vismed"
+        description="Designed a remedy and a working prototype to address a GCGO issue in healthcare with the assistance of ALX."
+        buttonText="Project slide deck"
+        buttonLink="https://www.canva.com/design/DAFomFCeOao/OHMTBlxGBM1NvvUDyXsbdQ/edit?utm_content=DAFomFCeOao&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+        buttonText2="Project Video"
+        buttonLink2="https://youtu.be/0R6w92q41yo"
         model={{
           type: 'phone',
           alt: 'App login screen',
@@ -122,7 +112,30 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
+        id="project-2"
+        sectionRef={projectOne}
+        visible={visibleSections.includes(projectOne.current)}
+        index={1}
+        title="Proplast"
+        description="Developed Proplast, a fully-featured ERP system for a plastics company."
+        buttonText="View project"
+        buttonLink="https://erp.proplast.et"
+        buttonText2=""
+        buttonLink2=""
+        model={{
+          type: 'laptop',
+          alt: 'Smart Sparrow lesson builder',
+          textures: [
+            {
+              srcSet: [sprTexture, sprTextureLarge],
+              placeholder: sprTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      {/* <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
@@ -131,6 +144,8 @@ export const Home = () => {
         description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
         buttonText="View project"
         buttonLink="/projects/slice"
+        buttonText2=""
+        buttonLink2=""
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -141,12 +156,36 @@ export const Home = () => {
             },
           ],
         }}
+      /> */}
+
+      <ProjectSummary
+        id="project-3"
+        alternate
+        sectionRef={projectThree}
+        visible={visibleSections.includes(projectThree.current)}
+        index={3}
+        title="Tomoca Bot"
+        description="Created an automated ordering system for a coffee shop."
+        buttonText="Vist the bot"
+        buttonLink="https://t.me/TomTomChan"
+        buttonText2=""
+        buttonLink2=""
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [TomocaBotB, TomocaBotB],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [TomocaBotF, TomocaBotF],
+              placeholder: gamestackTexture2Placeholder,
+            },
+          ],
+        }}
       />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
-      />
+
       <Footer />
     </div>
   );
