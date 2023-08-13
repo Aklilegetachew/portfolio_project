@@ -59,6 +59,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
       tabIndex={-1}
       {...rest}
     >
+      
       <Transition in key={theme.themeId} timeout={3000}>
         {(visible, status) => (
           <Fragment>

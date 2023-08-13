@@ -5,16 +5,18 @@ import styles from './Monogram.module.css';
 export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => {
   const id = useId();
   const clipId = `${id}monogram-clip`;
-
+  const monogramStyle = {
+    width: '46px',
+    height: '29px',
+  };
   return (
     <svg
       aria-hidden
-      className={classes(styles.monogram, className)}
-      width="46"
-      height="29"
+      className={styles.monogram + ' ' + className}
       viewBox="0 0 46 29"
       ref={ref}
       {...props}
+      style={monogramStyle}
     >
       <defs>
         <clipPath id={clipId}>
