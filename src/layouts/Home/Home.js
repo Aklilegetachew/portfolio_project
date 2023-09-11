@@ -84,7 +84,6 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
-
       <ProjectSummary
         id="project-1"
         alternate

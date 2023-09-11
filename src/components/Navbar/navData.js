@@ -8,13 +8,17 @@ export const navLinks = [
     pathname: '/#project-1',
   },
   {
+    label: 'Skills',
+    pathname: '/uses',
+  },
+  {
     label: 'Elevator pitch',
     pathname: '/articles',
   },
-  // {
-  //   label: 'Contact',
-  //   pathname: '/contact',
-  // },
+  {
+    label: 'Contact',
+    pathname: '/contact',
+  },
 ];
 
 export const socialLinks = [

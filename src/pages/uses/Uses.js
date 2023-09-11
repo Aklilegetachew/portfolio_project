@@ -23,7 +23,7 @@ export const Uses = () => {
     <Fragment>
       <Meta
         title="Uses"
-        description="A list of hardware and software I use to do my thing"
+        description="A list of softwares tools and programming languages I use to do my thing"
       />
       <ProjectContainer className={styles.uses}>
         <ProjectBackground
@@ -32,10 +32,10 @@ export const Uses = () => {
           opacity={0.7}
         />
         <ProjectHeader
-          title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
+          title="Skills"
+          description="This are some list of softwares tools and programming languages I use to do my thing"
         />
-        <ProjectSection padding="none" className={styles.section}>
+        {/* <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
               <ProjectSectionHeading>Design</ProjectSectionHeading>
@@ -63,8 +63,8 @@ export const Uses = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection padding="none" className={styles.section}>
+        </ProjectSection> */}
+        {/* <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
               <ProjectSectionHeading>Development</ProjectSectionHeading>
@@ -112,52 +112,40 @@ export const Uses = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow stretch width="m">
-              <ProjectSectionHeading>Hardware</ProjectSectionHeading>
+              <ProjectSectionHeading>Programming Skills</ProjectSectionHeading>
               <Table>
                 <TableBody>
                   <TableRow>
-                    <TableHeadCell>CPU</TableHeadCell>
-                    <TableCell>AMD Ryzen 5800x</TableCell>
+                    <TableHeadCell>Programming Languages</TableHeadCell>
+                    <TableCell>TypeScript, JavaScript, Dart, Java, Php, C++ </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>GPU</TableHeadCell>
-                    <TableCell>MSI Gaming X Trio RTX 3080</TableCell>
+                    <TableHeadCell>Backend Framework</TableHeadCell>
+                    <TableCell>Express.js, Node.js</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Memory</TableHeadCell>
-                    <TableCell>GSkill 32GB DDR4 3600mhz CAS 18</TableCell>
+                    <TableHeadCell>Frontend Framework</TableHeadCell>
+                    <TableCell>React, Next.js, Vue.js, Nuxt.js</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Motherboard</TableHeadCell>
-                    <TableCell>MSI B550 Tomahawk</TableCell>
+                    <TableHeadCell>App Development</TableHeadCell>
+                    <TableCell>Flutter</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Monitor</TableHeadCell>
-                    <TableCell>1440p IPS 144hz LG 27GL850</TableCell>
+                    <TableHeadCell>Databases</TableHeadCell>
+                    <TableCell>MYSQL, MongoDB</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Keyboard</TableHeadCell>
-                    <TableCell>Logitech MX Keys</TableCell>
+                    <TableHeadCell>Version Control</TableHeadCell>
+                    <TableCell>Github, Gitlab</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableHeadCell>Mouse</TableHeadCell>
-                    <TableCell>Logitech G403</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Laptop</TableHeadCell>
-                    <TableCell>Macbook Pro 14″ (2022 M1 Max)</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Headphones</TableHeadCell>
-                    <TableCell>Audio Technica ATH-M50x/Apple Airpods</TableCell>
-                  </TableRow>
-                  <TableRow>
-                    <TableHeadCell>Microphone</TableHeadCell>
-                    <TableCell>Blue Yeti</TableCell>
+                    <TableHeadCell>Tools</TableHeadCell>
+                    <TableCell>Vs Code, Figma, XAMPP, Mysql Workbench... </TableCell>
                   </TableRow>
                 </TableBody>
               </Table>

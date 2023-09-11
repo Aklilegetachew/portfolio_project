@@ -33,7 +33,7 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
+      const response = await fetch(`/message`, {
         method: 'POST',
         mode: 'cors',
         headers: {
@@ -44,7 +44,7 @@ export const Contact = () => {
           message: message.value,
         }),
       });
-
+      console.log(response);
       const responseMessage = await response.json();
 
       const statusError = getStatusError({
